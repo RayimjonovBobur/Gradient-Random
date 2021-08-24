@@ -1,0 +1,150 @@
+body {
+  font-family: sans-serif;
+  font-weight: 100px;
+  background-image: linear-gradient(95deg, #611049, #466074);
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  font-family:  'Trebuchet MS',  sans-serif;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bobur {  
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2rem;
+  color: #fff;
+  margin: 70px; 
+}
+
+
+.p {
+  color: blue;
+}
+
+.p:hover{
+  color: red;
+  transform: rotate(2,6,2s);
+}
+
+.textColor {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bolder;
+}
+
+@keyframes audioanim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.audio {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: .5rem 1rem;
+  /* margin-top:  2rem; */
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 9px;
+  box-shadow: 0 0 20px #fff;
+  animation: audioanim 2s ease-in-out infinite alternate;
+}
+
+@keyframes audioanim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#playbtn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+}
+
+.myinstagram, .mytelegram, .mygithub {
+  background-color: rgb(255, 255, 255);
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+  animation: insanim 1.5s ease-in-out infinite alternate;
+}
+@keyframes insanim {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.myinstagram a {
+  color: brown;
+}
+
+.mytelegram a {
+  color: rgba(0, 0, 255, 0.767);
+}
+
+.mygithub a {
+  color: black;
+}
+
+.myinstagram:hover {
+  box-shadow: 0 0 15px 8px #fff;
+  background-color: #aaa;
+}
+
+.mytelegram:hover {
+  box-shadow: 0 0 15px 8px #fff;
+  background-color: #aaa;
+  color: brown;
+}
+
+.mygithub:hover {
+  box-shadow: 0 0 15px 8px #fff;
+  background-color: rgba(204, 204, 204, 0.767);
+}
+
+
